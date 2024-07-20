@@ -1,0 +1,11 @@
+all:
+  children:
+    all_groups:
+      children:
+        security:
+          hosts:
+            kali: {}
+        web_servers:
+          hosts:
+            centos9: {}
+    ungrouped: {}
