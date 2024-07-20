@@ -1,0 +1,12 @@
+centos9
+kali
+
+[web_servers]
+centos9
+
+[security]
+kali
+
+[all_groups:children]
+web_servers
+security
