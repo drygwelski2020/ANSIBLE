@@ -1,12 +1,16 @@
-centos9
-kali
+rhel7
+rhel8
+rhel9
 
-[web_servers]
-centos9
+[rhel_servers]
+rhel7
+rhel8
+rhel9
 
 [security]
 kali
 
-[all_groups:children]
-web_servers
+[all_servers:children]
+rhel_servers
 security
+
