@@ -34,7 +34,7 @@ ansible-navigator:
   execution-environment:
     container-engine: podman
     enabled: true
-    image: ghcr.io/ansible/creator-ee:latest
+    image: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8:latest
     pull:
       policy: missing
   format: yaml

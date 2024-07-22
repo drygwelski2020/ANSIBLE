@@ -1,0 +1,11 @@
+---
+- name: Get the date and time in iso8601 format
+  hosts: rhel8
+  get_facts: true
+
+  vars:
+    dateTime: {{ ansible_facts['date_time']['iso8601'] }}
+  tasks:
+    - name: Get the date and time
+      ansible.builtin.debug:
+        var: dateTime
